@@ -293,7 +293,8 @@ header .fonctionnement__etape:hover > i {
 #restaurants .restaurant i {
   position: relative;
   bottom: 6.25rem;
-  left: 29rem;
+  left: 85%;
   font-size: 3rem;
+  max-width: 3rem;
 }
 /*# sourceMappingURL=main.css.map */
