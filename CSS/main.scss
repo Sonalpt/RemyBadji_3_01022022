@@ -25,6 +25,7 @@
     src: url(../policies/Roboto/Roboto-Thin.ttf);
 }
 
+/* DANS CE PROJET, 1REM EST EGALE A 10 PX */
 
 /* BASE */
 
@@ -81,8 +82,9 @@ header {
         padding-bottom: 5rem;
         .hero__titre {
             font-family: 'Roboto-Bold', sans-serif;
-            font-size: 2rem;
-            max-width: 200px;
+            font-size: 2.5rem;
+            max-width: 25rem;
+            padding-top: 1rem;
         }
         .hero__texte {
             margin-top: -0.5rem;
@@ -108,7 +110,7 @@ header {
         flex-direction: column;
         &__titre {
             font-family: 'Roboto-Bold', sans-serif;
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
         &__etape {
             background-color: #F6F6F6;
@@ -150,6 +152,72 @@ header {
             }
         }
     } 
+}
+
+/* -------------- SECTION RESTAURANTS ------------------- */
+
+.photo1 {
+    background-image: url(../MaquettesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.photo3 {
+    background-image: url(../MaquettesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.photo4 {
+    background-image: url(../MaquettesOhmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+#restaurants {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 100%;
+    h2 {
+        margin-left: 5%;
+        font-size: 2.5rem;
+    }
+    .restaurant {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        height: 30rem;
+        width: 90%;
+        &__photo {
+            height: 70%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position-y: -50px;
+            background-size: 105%;
+            border-radius: 1.5rem 1.5rem 0rem 0rem;
+        }
+        .photo2 {
+            background-image: url(../MaquettesOhmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+            background-position-y: -150px;
+        }
+        &__texte {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            border-radius: 0rem 0rem 1.5rem 1.5rem;
+            &__titre {
+                font-family: 'Roboto-Bold', sans-serif;
+                font-size: 2rem;
+                margin-bottom: 0.3rem;
+            }
+            &__localisation {
+                font-size: 2rem;
+            }
+        }
+        i {
+            position: relative;
+            bottom: 6.25rem;
+            left: 29rem;
+            font-size: 3rem;
+        }
+    }
 }
 
 
