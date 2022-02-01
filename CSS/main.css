@@ -29,6 +29,7 @@
   src: url(../policies/Roboto/Roboto-Thin.ttf);
 }
 
+/* BASE */
 html {
   font-size: 62.5%;
 }
@@ -59,7 +60,10 @@ main {
 /* --------------- LE HEADER ------------ */
 header nav h1 {
   font-family: 'Shrikhand-Regular', sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
   letter-spacing: 0.1rem;
   text-align: center;
 }
@@ -146,8 +150,57 @@ header .fonctionnement__titre {
 }
 
 header .fonctionnement__etape {
+  background-color: #F6F6F6;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-radius: 2rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+header .fonctionnement__etape .numero {
+  color: white;
+  border-radius: 300px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: #9356DC;
+  margin-right: 2rem;
+  position: relative;
+  right: 3%;
+}
+
+header .fonctionnement__etape i {
+  margin-right: 2rem;
+  font-size: 1.8rem;
+  color: #7E7E7E;
+  -webkit-transition: color 150ms ease-out;
+  transition: color 150ms ease-out;
+}
+
+header .fonctionnement__etape .texte {
+  font-size: 1.8rem;
+  font-family: 'Roboto-Bold', sans-serif;
+}
+
+header .fonctionnement__etape:hover {
+  background-color: #F5EDFF;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
+}
+
+header .fonctionnement__etape:hover > i {
+  color: #9356DC;
+  -webkit-transition: color 150ms ease-in;
+  transition: color 150ms ease-in;
 }
 /*# sourceMappingURL=main.css.map */
