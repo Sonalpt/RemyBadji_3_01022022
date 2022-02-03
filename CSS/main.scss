@@ -124,8 +124,6 @@ header {
             padding-top: 2.5rem;
             padding-bottom: 2.5rem;
             border-radius: 2rem;
-            transform: scale(1);
-            transition: all 150ms ease-out;
             .numero {
                 color: white;
                 border-radius: 300px;
@@ -145,14 +143,32 @@ header {
                 font-size: 1.8rem;
                 font-family: 'Roboto-Bold', sans-serif;
             }
-            &:hover {
-                background-color: #F5EDFF;
-                transform: scale(1.02);
-                transition: all 150ms ease-in;
+        }
+        &__etape-3 {
+            background-color: #F5EDFF;
+            align-items: center;
+            display: flex;
+            margin-bottom: 3rem;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            border-radius: 2rem;
+            .numero {
+                color: white;
+                border-radius: 300px;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                background: #9356DC; 
+                margin-right: 2rem;
+                position: relative;
+                right: 3%;
             }
-            &:hover > i {
+            i {
+                margin-right: 2rem;
+                font-size: 1.8rem;
                 color: #9356DC;
-                transition: color 150ms ease-in;
+            }
+            .texte {
+                font-size: 1.8rem;
+                font-family: 'Roboto-Bold', sans-serif;
             }
         }
     } 

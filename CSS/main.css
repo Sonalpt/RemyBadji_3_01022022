@@ -169,10 +169,6 @@ header .fonctionnement__etape {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   border-radius: 2rem;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
 }
 
 header .fonctionnement__etape .numero {
@@ -198,18 +194,39 @@ header .fonctionnement__etape .texte {
   font-family: 'Roboto-Bold', sans-serif;
 }
 
-header .fonctionnement__etape:hover {
+header .fonctionnement__etape-3 {
   background-color: #F5EDFF;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-transition: all 150ms ease-in;
-  transition: all 150ms ease-in;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-radius: 2rem;
 }
 
-header .fonctionnement__etape:hover > i {
+header .fonctionnement__etape-3 .numero {
+  color: white;
+  border-radius: 300px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: #9356DC;
+  margin-right: 2rem;
+  position: relative;
+  right: 3%;
+}
+
+header .fonctionnement__etape-3 i {
+  margin-right: 2rem;
+  font-size: 1.8rem;
   color: #9356DC;
-  -webkit-transition: color 150ms ease-in;
-  transition: color 150ms ease-in;
+}
+
+header .fonctionnement__etape-3 .texte {
+  font-size: 1.8rem;
+  font-family: 'Roboto-Bold', sans-serif;
 }
 
 /* -------------- SECTION RESTAURANTS ------------------- */
