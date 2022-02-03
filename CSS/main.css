@@ -461,6 +461,12 @@ header .photo-leDeliceDesSens {
 }
 
 .menu__nom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: 5%;
   margin-right: 5%;
   font-family: 'Shrikhand-Regular', sans-serif;
@@ -469,7 +475,9 @@ header .photo-leDeliceDesSens {
 }
 
 .menu__nom i {
-  margin-left: 7rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .menu__section {

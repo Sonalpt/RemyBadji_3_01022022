@@ -346,13 +346,15 @@ header {
     position: relative;
     bottom: 2rem;
     &__nom {
+        display: flex;
+        justify-content: space-between;
         margin-left: 5%;
         margin-right: 5%;
         font-family: 'Shrikhand-Regular', sans-serif;
         font-size: 2.5rem;
         margin-bottom: 2rem;
         i {
-            margin-left: 7rem;
+            align-self: center;
         }
     }
     &__section {
