@@ -492,6 +492,17 @@ header .photo-leDeliceDesSens {
   font-size: 1.8rem;
 }
 
+.menu__section .sousligne {
+  background-color: #99E2D0;
+  width: 4.5rem;
+  height: 0.3rem;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  -ms-flex-item-align: justify;
+      -ms-grid-row-align: justify;
+      align-self: justify;
+}
+
 .menu__section__choix {
   background-color: white;
   border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
