@@ -254,4 +254,58 @@ footer {
     }
 }
 
+/* ---------------- STYLE PAGE RESTAURANT ----------- */
+
+/* LA BASE */
+
+html {
+    font-size: 62.5%;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+main {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 1.6rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* LA SECTION "HEADER" */
+header {
+    width: 100%;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            color: black;
+            position: relative;
+            right: 8rem;
+            top: 0.5rem;
+            font-size: 2.1rem;
+        }
+        h1 {
+            margin-left: -1.5rem;
+        }
+    }
+    .photo {
+        z-index: -1;
+        min-width: 100%;
+        height: 25rem;
+        background-image: url(../MaquettesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        background-size: 110%;
+        background-position: -1rem;
+        background-repeat: no-repeat;
+    }
+}
+
+/* LA SECTION "MENU" */
+.menu {
+    display: flex;
+    flex-direction: column;
+}
 
