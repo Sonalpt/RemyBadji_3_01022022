@@ -172,6 +172,7 @@ header {
     flex-direction: column;
     align-self: flex-start;
     width: 100%;
+    padding-bottom: 3rem;
     h2 {
         margin-left: 5%;
         font-size: 2.5rem;
@@ -217,6 +218,38 @@ header {
             left: 85%;
             font-size: 3rem;
             max-width: 3rem;
+        }
+    }
+}
+
+footer {
+    background-color: #353535;
+    color: white;
+    width: 100%;
+    margin-left: 0rem;
+    padding-top: 2rem;
+    .marque {
+        font-family: 'Shrikhand-Regular', sans-serif;
+        margin-left: 2rem;
+        font-size: 1.8rem;
+    }
+    ul {
+        font-style: none;
+        list-style-type: none;
+        margin-left: -2rem;
+        .footer-important {
+            font-family: 'Roboto-Bold', sans-serif;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            text-align: justify;
+            font-size: 1.6rem;
+            display: flex;
+            i {
+                font-size: 1.3rem;
+                margin-right: 2rem;
+                max-width: 0.5rem;
+            }
         }
     }
 }
