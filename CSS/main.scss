@@ -96,7 +96,7 @@ header {
             font-size: 1.8rem;
         }
         a {
-            background: rgb(147,86,220);
+            background-color: rgb(147,86,220);
             background: linear-gradient(353deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
             text-decoration: none;
             color: white;
@@ -105,6 +105,11 @@ header {
             border-radius: 50px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             font-family: 'Roboto-Regular', sans-serif;
+            transition: background-color 600ms;
+            &:hover {
+                background: lighten($color: rgb(147,86,220), $amount: 15%);
+                transition: background-color 700ms;
+            }
         }
     }
     .fonctionnement {
@@ -465,6 +470,10 @@ header {
             background: linear-gradient(353deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
             box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             margin-bottom: 3rem;
+            &:hover {
+                background: lighten($color: rgb(147,86,220), $amount: 15%);
+                transition: background-color 700ms;
+            }
         }
 }
 

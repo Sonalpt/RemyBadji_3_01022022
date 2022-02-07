@@ -128,7 +128,7 @@ header .presentation .hero__texte {
 }
 
 header .presentation a {
-  background: #9356dc;
+  background-color: #9356dc;
   background: linear-gradient(353deg, #9356dc 0%, #ff79da 100%);
   text-decoration: none;
   color: white;
@@ -138,6 +138,14 @@ header .presentation a {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   font-family: 'Roboto-Regular', sans-serif;
+  -webkit-transition: background-color 600ms;
+  transition: background-color 600ms;
+}
+
+header .presentation a:hover {
+  background: #bc95e9;
+  -webkit-transition: background-color 700ms;
+  transition: background-color 700ms;
 }
 
 header .fonctionnement {
@@ -638,5 +646,11 @@ header .photo-leDeliceDesSens {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin-bottom: 3rem;
+}
+
+.menu .commander:hover {
+  background: #bc95e9;
+  -webkit-transition: background-color 700ms;
+  transition: background-color 700ms;
 }
 /*# sourceMappingURL=main.css.map */
