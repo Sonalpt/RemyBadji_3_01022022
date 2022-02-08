@@ -119,6 +119,35 @@
   }
 }
 
+@-webkit-keyframes animSelec {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    display: none;
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    display: -webkit-box;
+    display: flex;
+  }
+}
+
+@keyframes animSelec {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    display: none;
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 /* BASE */
 html {
   font-size: 62.5%;
@@ -631,7 +660,6 @@ header .photo-leDeliceDesSens {
       -ms-grid-row-align: center;
       align-self: center;
   position: absolute;
-  top: 2.5%;
   left: 87.5%;
   z-index: 1;
 }
@@ -683,8 +711,7 @@ header .photo-leDeliceDesSens {
 
 .menu__section__choix {
   background-color: white;
-  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
-  padding: 1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,6 +729,16 @@ header .photo-leDeliceDesSens {
           animation: transitionIn 800ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+.menu__section__choix:hover > .animSelection {
+  -webkit-animation: animSelec 700ms;
+          animation: animSelec 700ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .menu__section__choix:nth-last-child(3) {
@@ -727,12 +764,15 @@ header .photo-leDeliceDesSens {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1rem;
+  width: 30rem;
+  text-overflow: ellipsis;
 }
 
 .menu__section__choix .choix-texte .choix__titre {
   font-family: 'Roboto-Bold', sans-serif;
   font-size: 1.7rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
 }
 
 .menu__section__choix .choix-texte .choix__soustitre {
@@ -741,11 +781,42 @@ header .photo-leDeliceDesSens {
 
 .menu__section__choix .prix {
   font-family: 'Roboto-Bold', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #353535;
-  position: relative;
-  top: 2.5rem;
-  right: 0.5rem;
+  padding-right: 1rem;
+  padding-top: 3.4rem;
+  width: 3rem;
+}
+
+.menu__section__choix .animSelection {
+  background-color: #99E2D0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0rem 1rem 1rem 0rem;
+  width: 15%;
+  display: none;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.menu__section__choix .animSelection i {
+  color: white;
+  font-size: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .menu .commander {
