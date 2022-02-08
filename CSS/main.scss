@@ -27,6 +27,43 @@
 
 /* DANS CE PROJET, 1REM EST EGALE A 10 PX */
 
+/* ----------- KEYFRAMES --------- */
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+@keyframes Jaime {
+    0% {
+        transform: scale(0);
+    }
+    34% {
+        transform: scale(0.34);
+    }
+    50% {
+        transform: scale(0.50);
+    }
+    70% {
+        transform: scale(0.80);
+    }
+    80% {
+        transform: scale(0.40);
+    }
+    90% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* BASE */
 
 html {
@@ -236,12 +273,30 @@ header {
                 font-size: 2rem;
             }
         }
+        .fa-solid {
+            color: rgb(147,86,220);
+            color: linear-gradient(353deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+            z-index: 2;
+            position: relative;
+            bottom: 9.25rem;
+            left: 65%;
+            transform-origin: center bottom;
+            transform: scale(0);
+        }
         i {
             position: relative;
             bottom: 6.25rem;
             left: 85%;
             font-size: 3rem;
             max-width: 3rem;
+            z-index: 1;
+            &:hover {
+                & + .fa-solid {
+                    left: 85%;
+                    animation: Jaime 1000ms;
+                    animation-fill-mode: forwards;
+                }
+            }
         }
     }
 }
@@ -279,20 +334,6 @@ footer {
 }
 
 /* ---------------- STYLE PAGE RESTAURANT ----------- */
-
-/* ----------- KEYFRAMES PAGE RESTAURANT --------- */
-
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: translateY(2rem);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0rem);
-    }
-}
 
 /* LA BASE */
 
@@ -388,8 +429,34 @@ header {
         font-family: 'Shrikhand-Regular', sans-serif;
         font-size: 2.5rem;
         margin-bottom: 2rem;
+        .fa-solid {
+            color: rgb(147,86,220);
+            color: linear-gradient(353deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+            position: absolute;
+            z-index: 2;
+            left: 80%;
+            transform: scale(0);
+            transform-origin: center bottom;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
         i {
             align-self: center;
+            position: absolute;
+            top: 2.5%;
+            left: 87.5%;
+            z-index: 1;
+            &:hover {
+                cursor: pointer;
+                & + .fa-solid {
+                    transform: scale(1);
+                    left: 87.5%;
+                    animation: Jaime 1000ms;
+                    animation-fill-mode: forwards;
+                }
+            }
         }
     }
     &__section {

@@ -31,6 +31,94 @@
 }
 
 /* DANS CE PROJET, 1REM EST EGALE A 10 PX */
+/* ----------- KEYFRAMES --------- */
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@-webkit-keyframes Jaime {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  34% {
+    -webkit-transform: scale(0.34);
+            transform: scale(0.34);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  70% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  80% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  90% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes Jaime {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  34% {
+    -webkit-transform: scale(0.34);
+            transform: scale(0.34);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  70% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  80% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  90% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 /* BASE */
 html {
   font-size: 62.5%;
@@ -321,12 +409,34 @@ header .fonctionnement__etape-3 .texte {
   font-size: 2rem;
 }
 
+#restaurants .restaurant .fa-solid {
+  color: #9356dc;
+  color: linear-gradient(353deg, #9356dc 0%, #ff79da 100%);
+  z-index: 2;
+  position: relative;
+  bottom: 9.25rem;
+  left: 65%;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
 #restaurants .restaurant i {
   position: relative;
   bottom: 6.25rem;
   left: 85%;
   font-size: 3rem;
   max-width: 3rem;
+  z-index: 1;
+}
+
+#restaurants .restaurant i:hover + .fa-solid {
+  left: 85%;
+  -webkit-animation: Jaime 1000ms;
+          animation: Jaime 1000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 footer {
@@ -369,32 +479,6 @@ footer ul li i {
 }
 
 /* ---------------- STYLE PAGE RESTAURANT ----------- */
-/* ----------- KEYFRAMES PAGE RESTAURANT --------- */
-@-webkit-keyframes transitionIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(2rem);
-            transform: translateY(2rem);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
-  }
-}
-@keyframes transitionIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(2rem);
-            transform: translateY(2rem);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
-  }
-}
-
 /* LA BASE */
 html {
   font-size: 62.5%;
@@ -525,10 +609,45 @@ header .photo-leDeliceDesSens {
   margin-bottom: 2rem;
 }
 
+.menu__nom .fa-solid {
+  color: #9356dc;
+  color: linear-gradient(353deg, #9356dc 0%, #ff79da 100%);
+  position: absolute;
+  z-index: 2;
+  left: 80%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+.menu__nom a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .menu__nom i {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  position: absolute;
+  top: 2.5%;
+  left: 87.5%;
+  z-index: 1;
+}
+
+.menu__nom i:hover {
+  cursor: pointer;
+}
+
+.menu__nom i:hover + .fa-solid {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  left: 87.5%;
+  -webkit-animation: Jaime 1000ms;
+          animation: Jaime 1000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .menu__section {
