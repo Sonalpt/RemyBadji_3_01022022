@@ -63,16 +63,14 @@
         transform: scale(1);
     }
 }
-@keyframes animSelec {
-    from {
-        transform: scaleX(0);
-        display: none;
-    }
+@keyframes animRotate {
+   from {
+       transform: rotate(0deg);
+   }
     
-    to {
-        transform: scaleX(1);
-        display: flex;
-    }
+   to {
+       transform: rotate(360deg);
+   }
 }
 
 /* BASE */
@@ -501,11 +499,25 @@ header {
                 transform: translateY(2rem);
                 animation: transitionIn 800ms;
                 animation-fill-mode: forwards;
+                overflow: hidden;
                 &:hover {
                     > .animSelection {
-                        animation: animSelec 700ms;
-                        animation-fill-mode: forwards;
-                        display: flex;
+                        transform: translateX(0%);
+                        transition: transform 600ms;
+                    }
+                    > .animSelection > i {
+                        animation: animRotate 600ms;
+                    }
+                    > .prix {
+                        transform: translateX(0%);
+                        transition: transform 600ms;
+                    }
+                    > .choix-texte > .choix__soustitre {
+                        max-width: 20rem;
+                    }
+                    > .choix-texte > .choix__titre {
+                        max-width: 25rem;
+                        transition: max-width 600ms;
                     }
                 }
                 &:nth-last-child(3) {
@@ -527,18 +539,34 @@ header {
                         font-family: 'Roboto-Bold', sans-serif;
                         font-size: 1.7rem;
                         margin-bottom: 0.1rem;
+                        max-width: 30rem;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        max-lines: 1;
+                        transition: max-width 600ms;
                     }
                     .choix__soustitre {
                         font-size: 1.4rem;
+                        max-width: 25rem;
+                        width: 25rem;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        max-lines: 1;
+                        transition: max-width 600ms;
                     }
                 }
                 .prix {
                     font-family: 'Roboto-Bold', sans-serif;
                     font-size: 1.3rem;
                     color: #353535;
-                    padding-right: 1rem;
+                    padding-right: 0;
+                    margin-right: 1rem;
                     padding-top: 3.4rem;
                     width: 3rem;
+                    transform: translateX(150%);
+                    transition: transform 600ms;
                 }
                 .animSelection {
                     background-color: #99E2D0;
@@ -548,9 +576,9 @@ header {
                     justify-content: center;
                     border-radius: 0rem 1rem 1rem 0rem;
                     width: 15%;
-                    display: none;
-                    transform: scaleX(0);
                     transform-origin: right;
+                    transform: translateX(100%);
+                    transition: transform 600ms;
                     i {
                         color: white;
                         font-size: 2rem;

@@ -119,32 +119,25 @@
   }
 }
 
-@-webkit-keyframes animSelec {
+@-webkit-keyframes animRotate {
   from {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    display: none;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    display: -webkit-box;
-    display: flex;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
-@keyframes animSelec {
+@keyframes animRotate {
   from {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    display: none;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -729,16 +722,40 @@ header .photo-leDeliceDesSens {
           animation: transitionIn 800ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  overflow: hidden;
 }
 
 .menu__section__choix:hover > .animSelection {
-  -webkit-animation: animSelec 700ms;
-          animation: animSelec 700ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+}
+
+.menu__section__choix:hover > .animSelection > i {
+  -webkit-animation: animRotate 600ms;
+          animation: animRotate 600ms;
+}
+
+.menu__section__choix:hover > .prix {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+}
+
+.menu__section__choix:hover > .choix-texte > .choix__soustitre {
+  max-width: 20rem;
+}
+
+.menu__section__choix:hover > .choix-texte > .choix__titre {
+  max-width: 25rem;
+  -webkit-transition: max-width 600ms;
+  transition: max-width 600ms;
 }
 
 .menu__section__choix:nth-last-child(3) {
@@ -773,19 +790,41 @@ header .photo-leDeliceDesSens {
   font-family: 'Roboto-Bold', sans-serif;
   font-size: 1.7rem;
   margin-bottom: 0.1rem;
+  max-width: 30rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-lines: 1;
+  -webkit-transition: max-width 600ms;
+  transition: max-width 600ms;
 }
 
 .menu__section__choix .choix-texte .choix__soustitre {
   font-size: 1.4rem;
+  max-width: 25rem;
+  width: 25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-lines: 1;
+  -webkit-transition: max-width 600ms;
+  transition: max-width 600ms;
 }
 
 .menu__section__choix .prix {
   font-family: 'Roboto-Bold', sans-serif;
   font-size: 1.3rem;
   color: #353535;
-  padding-right: 1rem;
+  padding-right: 0;
+  margin-right: 1rem;
   padding-top: 3.4rem;
   width: 3rem;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
 }
 
 .menu__section__choix .animSelection {
@@ -805,11 +844,14 @@ header .photo-leDeliceDesSens {
           justify-content: center;
   border-radius: 0rem 1rem 1rem 0rem;
   width: 15%;
-  display: none;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
 }
 
 .menu__section__choix .animSelection i {
