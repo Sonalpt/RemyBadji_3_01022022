@@ -728,24 +728,24 @@ header .photo-leDeliceDesSens {
 .menu__section__choix:hover > .animSelection {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-  -webkit-transition: -webkit-transform 600ms;
-  transition: -webkit-transform 600ms;
-  transition: transform 600ms;
-  transition: transform 600ms, -webkit-transform 600ms;
+  -webkit-transition: -webkit-transform 450ms;
+  transition: -webkit-transform 450ms;
+  transition: transform 450ms;
+  transition: transform 450ms, -webkit-transform 450ms;
 }
 
 .menu__section__choix:hover > .animSelection > i {
-  -webkit-animation: animRotate 600ms;
-          animation: animRotate 600ms;
+  -webkit-animation: animRotate 450ms;
+          animation: animRotate 450ms;
 }
 
 .menu__section__choix:hover > .prix {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-  -webkit-transition: -webkit-transform 600ms;
-  transition: -webkit-transform 600ms;
-  transition: transform 600ms;
-  transition: transform 600ms, -webkit-transform 600ms;
+  -webkit-transition: -webkit-transform 450ms;
+  transition: -webkit-transform 450ms;
+  transition: transform 450ms;
+  transition: transform 450ms, -webkit-transform 450ms;
 }
 
 .menu__section__choix:hover > .choix-texte > .choix__soustitre {
@@ -754,8 +754,8 @@ header .photo-leDeliceDesSens {
 
 .menu__section__choix:hover > .choix-texte > .choix__titre {
   max-width: 25rem;
-  -webkit-transition: max-width 600ms;
-  transition: max-width 600ms;
+  -webkit-transition: max-width 450ms;
+  transition: max-width 450ms;
 }
 
 .menu__section__choix:nth-last-child(3) {
@@ -795,8 +795,8 @@ header .photo-leDeliceDesSens {
   overflow: hidden;
   text-overflow: ellipsis;
   max-lines: 1;
-  -webkit-transition: max-width 600ms;
-  transition: max-width 600ms;
+  -webkit-transition: max-width 450ms;
+  transition: max-width 450ms;
 }
 
 .menu__section__choix .choix-texte .choix__soustitre {
@@ -807,8 +807,8 @@ header .photo-leDeliceDesSens {
   overflow: hidden;
   text-overflow: ellipsis;
   max-lines: 1;
-  -webkit-transition: max-width 600ms;
-  transition: max-width 600ms;
+  -webkit-transition: max-width 450ms;
+  transition: max-width 450ms;
 }
 
 .menu__section__choix .prix {
@@ -821,10 +821,10 @@ header .photo-leDeliceDesSens {
   width: 3rem;
   -webkit-transform: translateX(150%);
           transform: translateX(150%);
-  -webkit-transition: -webkit-transform 600ms;
-  transition: -webkit-transform 600ms;
-  transition: transform 600ms;
-  transition: transform 600ms, -webkit-transform 600ms;
+  -webkit-transition: -webkit-transform 450ms;
+  transition: -webkit-transform 450ms;
+  transition: transform 450ms;
+  transition: transform 450ms, -webkit-transform 450ms;
 }
 
 .menu__section__choix .animSelection {
@@ -848,10 +848,10 @@ header .photo-leDeliceDesSens {
           transform-origin: right;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform 600ms;
-  transition: -webkit-transform 600ms;
-  transition: transform 600ms;
-  transition: transform 600ms, -webkit-transform 600ms;
+  -webkit-transition: -webkit-transform 450ms;
+  transition: -webkit-transform 450ms;
+  transition: transform 450ms;
+  transition: transform 450ms, -webkit-transform 450ms;
 }
 
 .menu__section__choix .animSelection i {

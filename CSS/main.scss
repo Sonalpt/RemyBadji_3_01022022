@@ -503,21 +503,21 @@ header {
                 &:hover {
                     > .animSelection {
                         transform: translateX(0%);
-                        transition: transform 600ms;
+                        transition: transform 450ms;
                     }
                     > .animSelection > i {
-                        animation: animRotate 600ms;
+                        animation: animRotate 450ms;
                     }
                     > .prix {
                         transform: translateX(0%);
-                        transition: transform 600ms;
+                        transition: transform 450ms;
                     }
                     > .choix-texte > .choix__soustitre {
                         max-width: 20rem;
                     }
                     > .choix-texte > .choix__titre {
                         max-width: 25rem;
-                        transition: max-width 600ms;
+                        transition: max-width 450ms;
                     }
                 }
                 &:nth-last-child(3) {
@@ -544,7 +544,7 @@ header {
                         overflow: hidden;
                         text-overflow: ellipsis;
                         max-lines: 1;
-                        transition: max-width 600ms;
+                        transition: max-width 450ms;
                     }
                     .choix__soustitre {
                         font-size: 1.4rem;
@@ -554,7 +554,7 @@ header {
                         overflow: hidden;
                         text-overflow: ellipsis;
                         max-lines: 1;
-                        transition: max-width 600ms;
+                        transition: max-width 450ms;
                     }
                 }
                 .prix {
@@ -566,7 +566,7 @@ header {
                     padding-top: 3.4rem;
                     width: 3rem;
                     transform: translateX(150%);
-                    transition: transform 600ms;
+                    transition: transform 450ms;
                 }
                 .animSelection {
                     background-color: #99E2D0;
@@ -578,7 +578,7 @@ header {
                     width: 15%;
                     transform-origin: right;
                     transform: translateX(100%);
-                    transition: transform 600ms;
+                    transition: transform 450ms;
                     i {
                         color: white;
                         font-size: 2rem;
