@@ -95,6 +95,7 @@ a {
     color: inherit;
 }
 
+    
 /* --------------- LE HEADER ------------ */
 
 header {
@@ -161,67 +162,77 @@ header {
     .fonctionnement {
         margin-left: 5%;
         margin-right: 5%;
+        margin-bottom: 4rem;
+        margin-top: -1rem;
         display: flex;
         flex-direction: column;
         &__titre {
             font-family: 'Roboto-Bold', sans-serif;
             font-size: 2.5rem;
         }
-        &__etape {
-            background-color: #F6F6F6;
-            align-items: center;
+        &__etapes {
             display: flex;
-            margin-bottom: 3rem;
-            padding-top: 2.5rem;
-            padding-bottom: 2.5rem;
-            border-radius: 2rem;
-            .numero {
-                color: white;
-                border-radius: 300px;
-                padding: 0.5rem 1rem 0.5rem 1rem;
-                background: #9356DC; 
-                margin-right: 2rem;
-                position: relative;
-                right: 3%;
+            flex-direction: column;
+            &__etape {
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                background-color: #F6F6F6;
+                align-items: center;
+                display: flex;
+                margin-bottom: 3rem;
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem;
+                border-radius: 2rem;
+                .numero {
+                    color: white;
+                    border-radius: 300px;
+                    padding: 0.5rem 1rem 0.5rem 1rem;
+                    background: #9356DC; 
+                    margin-right: 2rem;
+                    position: relative;
+                    right: 3%;
+                }
+                i {
+                    margin-right: 2rem;
+                    font-size: 1.8rem;
+                    color: #7E7E7E;
+                    transition: color 150ms ease-out;
+                }
+                .texte {
+                    font-size: 1.8rem;
+                    font-family: 'Roboto-Bold', sans-serif;
+                }
             }
-            i {
-                margin-right: 2rem;
-                font-size: 1.8rem;
-                color: #7E7E7E;
-                transition: color 150ms ease-out;
-            }
-            .texte {
-                font-size: 1.8rem;
-                font-family: 'Roboto-Bold', sans-serif;
+            &__etape-3 {
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                background-color: #F5EDFF;
+                align-items: center;
+                display: flex;
+                margin-bottom: 3rem;
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem;
+                border-radius: 2rem;
+                .numero {
+                    color: white;
+                    border-radius: 300px;
+                    padding: 0.5rem 1rem 0.5rem 1rem;
+                    background: #9356DC; 
+                    margin-right: 2rem;
+                    position: relative;
+                    right: 3%;
+                }
+                i {
+                    margin-right: 2rem;
+                    font-size: 1.8rem;
+                    color: #9356DC;
+                }
+                .texte {
+                    font-size: 1.8rem;
+                    font-family: 'Roboto-Bold', sans-serif;
+                }
             }
         }
-        &__etape-3 {
-            background-color: #F5EDFF;
-            align-items: center;
-            display: flex;
-            margin-bottom: 3rem;
-            padding-top: 2.5rem;
-            padding-bottom: 2.5rem;
-            border-radius: 2rem;
-            .numero {
-                color: white;
-                border-radius: 300px;
-                padding: 0.5rem 1rem 0.5rem 1rem;
-                background: #9356DC; 
-                margin-right: 2rem;
-                position: relative;
-                right: 3%;
-            }
-            i {
-                margin-right: 2rem;
-                font-size: 1.8rem;
-                color: #9356DC;
-            }
-            .texte {
-                font-size: 1.8rem;
-                font-family: 'Roboto-Bold', sans-serif;
-            }
-        }
+        
+        
     } 
 }
 
@@ -238,34 +249,40 @@ header {
 }
 
 #restaurants {
+    padding-top: 3rem;
     background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
     align-self: flex-start;
     width: 100%;
     padding-bottom: 3rem;
+    margin-bottom: -2rem;
     h2 {
         margin-left: 5%;
         font-size: 2.5rem;
+        margin-bottom: 6.5rem;
     }
     .restaurant {
         display: flex;
         flex-direction: column;
         margin-left: 5%;
-        height: 30rem;
+        height: 33rem;
         width: 90%;
+        margin-top: -4rem;
         &__photo {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             height: 70%;
             width: 100%;
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 105%;
+            background-size: cover;
             border-radius: 1.5rem 1.5rem 0rem 0rem;
         }
         .photo2 {
             background-image: url(../MaquettesOhmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
         }
         &__texte {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             background-color: white;
             display: flex;
             flex-direction: column;
@@ -295,13 +312,14 @@ header {
         i {
             position: relative;
             bottom: 6.25rem;
-            left: 85%;
+            margin-left: 87%;
             font-size: 3rem;
             max-width: 3rem;
             z-index: 1;
             &:hover {
                 & + .fa-solid {
-                    left: 85%;
+                    left: 0%;
+                    margin-left: 87%;
                     animation: Jaime 1000ms;
                     animation-fill-mode: forwards;
                 }
@@ -315,16 +333,20 @@ footer {
     color: white;
     width: 100%;
     margin-left: 0rem;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
     .marque {
         font-family: 'Shrikhand-Regular', sans-serif;
-        margin-left: 2rem;
+        margin-left: 2.5rem;
         font-size: 1.8rem;
+        &:hover {
+            cursor: pointer;
+        }
     }
     ul {
         font-style: none;
         list-style-type: none;
-        margin-left: -2rem;
+        margin-left: -1.5rem;
         .footer-important {
             font-family: 'Roboto-Bold', sans-serif;
         }
@@ -333,6 +355,9 @@ footer {
             text-align: justify;
             font-size: 1.6rem;
             display: flex;
+            &:hover {
+                cursor: pointer;
+            }
             i {
                 font-size: 1.3rem;
                 margin-right: 2rem;
@@ -509,14 +534,13 @@ header {
                         animation: animRotate 450ms;
                     }
                     > .prix {
-                        transform: translateX(0%);
-                        transition: transform 450ms;
+                        transition: transform 450ms, margin-left 450ms;
                     }
                     > .choix-texte > .choix__soustitre {
                         max-width: 20rem;
                     }
                     > .choix-texte > .choix__titre {
-                        max-width: 25rem;
+                        max-width: 20rem;
                         transition: max-width 450ms;
                     }
                 }
@@ -539,7 +563,7 @@ header {
                         font-family: 'Roboto-Bold', sans-serif;
                         font-size: 1.7rem;
                         margin-bottom: 0.1rem;
-                        max-width: 30rem;
+                        max-width: 25rem;
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -565,8 +589,8 @@ header {
                     margin-right: 1rem;
                     padding-top: 3.4rem;
                     width: 3rem;
-                    transform: translateX(150%);
-                    transition: transform 450ms;
+                    margin-left: 10%;
+                    transition: transform 450ms, margin-left 450ms;
                 }
                 .animSelection {
                     background-color: #99E2D0;
@@ -608,4 +632,223 @@ header {
             }
         }
 }
+
+/* --------------------- RESPONSIVE DESIGN DESKTOP ---------------- */
+
+@media (min-width: 768px) {
+
+    /* BASES DU RESPONSIVE */
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    main {
+        width: 90%;
+        margin-top: 2.5%;
+        margin-bottom: 5%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 30px;
+    }
+    footer {
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    /* RUBRIQUE "FONCTIONNEMENT" */
+
+    header {
+        .fonctionnement {
+            margin-bottom: 5rem;
+            &__titre {
+                text-align: center;
+                margin-bottom: 5rem;
+                font-size: 3.5rem;
+            }
+            &__etapes {
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                &__etape {
+                    padding-right: 3rem;
+                }
+                &__etape-3 {
+                    padding-right: 3rem;
+                }
+            }
+        }
+    }
+
+    #restaurants {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 15% 40% 40%;
+        grid-template-areas: 
+        "titre titre"
+        "restaurant1 restaurant2"
+        "restaurant3 restaurant4"
+        ;
+        h2 {
+            grid-area: titre;
+            text-align: center;
+            font-size: 3.5rem;
+            transform: translateX(-2.75%);
+        }
+        .restaurant {
+            height: 50rem;
+            i {
+                margin-left: 92%;
+                &:hover {
+                    & + .fa-solid {
+                        margin-left: 92%;
+                    }
+                }
+            }
+        }
+        .restaurant1 {
+            grid-area: restaurant1;
+            margin-bottom: 10rem;
+        }
+        .restaurant2 {
+            grid-area: restaurant2;
+            margin-bottom: 10rem;
+        }
+        .restaurant3 {
+            grid-area: restaurant3;
+        }
+        .restaurant4 {
+            grid-area: restaurant4;
+        }
+    }
+
+    /* LES PAGES "RESTAURANTS" */
+
+    .photo-laPaletteDuGout {
+        min-height: 35rem;
+    }
+    .photo-laNoteEnchantee {
+        min-height: 35rem;
+    }
+    .photo-aLaFrançaise {
+        min-height: 35rem;
+    }
+    .photo-leDeliceDesSens {
+        min-height: 35rem;
+    }
+
+    .menu {
+        &__section {
+            &__choix {
+                &:hover {
+                    > .choix-texte > .choix__soustitre {
+                        max-width: 20rem;
+                    }
+                    > .choix-texte > .choix__titre {
+                        max-width: 20rem;
+                        transition: max-width 450ms;
+                    }
+                }
+                .prix {
+                    margin-left: 75%;
+                    font-size: 1.7rem;
+                    padding-top: 3rem;
+                }
+                .choix-texte {
+                    text-overflow: unset;
+                    .choix__titre {
+                        overflow: visible;
+                        text-overflow: unset;
+                    }
+                    .choix__soustitre {
+                        overflow: visible;
+                        text-overflow: unset;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+    
+}
+
+@media (max-width: 1440px) {
+    .menu {
+       .prix {
+           margin-left: 69%;
+       }
+    }
+}
+
+@media (max-width: 1300px) {
+    .menu {
+       .prix {
+           margin-left: 69%;
+       }
+    }
+}
+@media (max-width: 1250px) {
+    .menu {
+       .prix {
+           margin-left: 67%;
+       }
+    }
+}
+@media (max-width: 1200px) {
+    .menu {
+       .prix {
+           margin-left: 65%;
+       }
+    }
+}
+@media (max-width: 1150px) {
+    .menu {
+       .prix {
+           margin-left: 63%;
+       }
+    }
+}
+@media (max-width: 1100px) {
+    .menu {
+       .prix {
+           margin-left: 61%;
+       }
+    }
+}
+@media (max-width: 1024px) {
+    .menu {
+       .prix {
+           margin-left: 60%;
+       }
+    }
+}
+@media (max-width: 967px) {
+    .menu {
+       .prix {
+           margin-left: 55%;
+       }
+    }
+}
+@media (max-width: 810px) {
+    .menu {
+       .prix {
+           margin-left: 50%;
+       }
+    }
+}
+@media (max-width: 768px) {
+    .menu {
+        .prix {
+            margin-left: 10%;
+        }
+     }
+}
+@media (max-width: 350px) {
+    .menu {
+        .prix {
+            margin-left: -5%;
+        }
+     }
+}
+
+
+
 

@@ -261,6 +261,8 @@ header .presentation a:hover {
 header .fonctionnement {
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 4rem;
+  margin-top: -1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,7 +277,19 @@ header .fonctionnement__titre {
   font-size: 2.5rem;
 }
 
-header .fonctionnement__etape {
+header .fonctionnement__etapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .fonctionnement__etapes__etape {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   background-color: #F6F6F6;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -289,7 +303,7 @@ header .fonctionnement__etape {
   border-radius: 2rem;
 }
 
-header .fonctionnement__etape .numero {
+header .fonctionnement__etapes__etape .numero {
   color: white;
   border-radius: 300px;
   padding: 0.5rem 1rem 0.5rem 1rem;
@@ -299,7 +313,7 @@ header .fonctionnement__etape .numero {
   right: 3%;
 }
 
-header .fonctionnement__etape i {
+header .fonctionnement__etapes__etape i {
   margin-right: 2rem;
   font-size: 1.8rem;
   color: #7E7E7E;
@@ -307,12 +321,14 @@ header .fonctionnement__etape i {
   transition: color 150ms ease-out;
 }
 
-header .fonctionnement__etape .texte {
+header .fonctionnement__etapes__etape .texte {
   font-size: 1.8rem;
   font-family: 'Roboto-Bold', sans-serif;
 }
 
-header .fonctionnement__etape-3 {
+header .fonctionnement__etapes__etape-3 {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   background-color: #F5EDFF;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -326,7 +342,7 @@ header .fonctionnement__etape-3 {
   border-radius: 2rem;
 }
 
-header .fonctionnement__etape-3 .numero {
+header .fonctionnement__etapes__etape-3 .numero {
   color: white;
   border-radius: 300px;
   padding: 0.5rem 1rem 0.5rem 1rem;
@@ -336,13 +352,13 @@ header .fonctionnement__etape-3 .numero {
   right: 3%;
 }
 
-header .fonctionnement__etape-3 i {
+header .fonctionnement__etapes__etape-3 i {
   margin-right: 2rem;
   font-size: 1.8rem;
   color: #9356DC;
 }
 
-header .fonctionnement__etape-3 .texte {
+header .fonctionnement__etapes__etape-3 .texte {
   font-size: 1.8rem;
   font-family: 'Roboto-Bold', sans-serif;
 }
@@ -361,6 +377,7 @@ header .fonctionnement__etape-3 .texte {
 }
 
 #restaurants {
+  padding-top: 3rem;
   background-color: #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,11 +390,13 @@ header .fonctionnement__etape-3 .texte {
       align-self: flex-start;
   width: 100%;
   padding-bottom: 3rem;
+  margin-bottom: -2rem;
 }
 
 #restaurants h2 {
   margin-left: 5%;
   font-size: 2.5rem;
+  margin-bottom: 6.5rem;
 }
 
 #restaurants .restaurant {
@@ -389,16 +408,19 @@ header .fonctionnement__etape-3 .texte {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 5%;
-  height: 30rem;
+  height: 33rem;
   width: 90%;
+  margin-top: -4rem;
 }
 
 #restaurants .restaurant__photo {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   height: 70%;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 105%;
+  background-size: cover;
   border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
@@ -407,6 +429,8 @@ header .fonctionnement__etape-3 .texte {
 }
 
 #restaurants .restaurant__texte {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,14 +471,15 @@ header .fonctionnement__etape-3 .texte {
 #restaurants .restaurant i {
   position: relative;
   bottom: 6.25rem;
-  left: 85%;
+  margin-left: 87%;
   font-size: 3rem;
   max-width: 3rem;
   z-index: 1;
 }
 
 #restaurants .restaurant i:hover + .fa-solid {
-  left: 85%;
+  left: 0%;
+  margin-left: 87%;
   -webkit-animation: Jaime 1000ms;
           animation: Jaime 1000ms;
   -webkit-animation-fill-mode: forwards;
@@ -466,19 +491,24 @@ footer {
   color: white;
   width: 100%;
   margin-left: 0rem;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 footer .marque {
   font-family: 'Shrikhand-Regular', sans-serif;
-  margin-left: 2rem;
+  margin-left: 2.5rem;
   font-size: 1.8rem;
+}
+
+footer .marque:hover {
+  cursor: pointer;
 }
 
 footer ul {
   font-style: none;
   list-style-type: none;
-  margin-left: -2rem;
+  margin-left: -1.5rem;
 }
 
 footer ul .footer-important {
@@ -492,6 +522,10 @@ footer ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+footer ul li:hover {
+  cursor: pointer;
 }
 
 footer ul li i {
@@ -740,12 +774,10 @@ header .photo-leDeliceDesSens {
 }
 
 .menu__section__choix:hover > .prix {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  -webkit-transition: -webkit-transform 450ms;
-  transition: -webkit-transform 450ms;
-  transition: transform 450ms;
-  transition: transform 450ms, -webkit-transform 450ms;
+  -webkit-transition: margin-left 450ms, -webkit-transform 450ms;
+  transition: margin-left 450ms, -webkit-transform 450ms;
+  transition: transform 450ms, margin-left 450ms;
+  transition: transform 450ms, margin-left 450ms, -webkit-transform 450ms;
 }
 
 .menu__section__choix:hover > .choix-texte > .choix__soustitre {
@@ -753,7 +785,7 @@ header .photo-leDeliceDesSens {
 }
 
 .menu__section__choix:hover > .choix-texte > .choix__titre {
-  max-width: 25rem;
+  max-width: 20rem;
   -webkit-transition: max-width 450ms;
   transition: max-width 450ms;
 }
@@ -790,7 +822,7 @@ header .photo-leDeliceDesSens {
   font-family: 'Roboto-Bold', sans-serif;
   font-size: 1.7rem;
   margin-bottom: 0.1rem;
-  max-width: 30rem;
+  max-width: 25rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -819,12 +851,11 @@ header .photo-leDeliceDesSens {
   margin-right: 1rem;
   padding-top: 3.4rem;
   width: 3rem;
-  -webkit-transform: translateX(150%);
-          transform: translateX(150%);
-  -webkit-transition: -webkit-transform 450ms;
-  transition: -webkit-transform 450ms;
-  transition: transform 450ms;
-  transition: transform 450ms, -webkit-transform 450ms;
+  margin-left: 10%;
+  -webkit-transition: margin-left 450ms, -webkit-transform 450ms;
+  transition: margin-left 450ms, -webkit-transform 450ms;
+  transition: transform 450ms, margin-left 450ms;
+  transition: transform 450ms, margin-left 450ms, -webkit-transform 450ms;
 }
 
 .menu__section__choix .animSelection {
@@ -884,5 +915,207 @@ header .photo-leDeliceDesSens {
   background: #bc95e9;
   -webkit-transition: background-color 700ms;
   transition: background-color 700ms;
+}
+
+/* --------------------- RESPONSIVE DESIGN DESKTOP ---------------- */
+@media (min-width: 768px) {
+  /* BASES DU RESPONSIVE */
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main {
+    width: 90%;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+  }
+  footer {
+    border-radius: 0px 0px 30px 30px;
+  }
+  /* RUBRIQUE "FONCTIONNEMENT" */
+  header .fonctionnement {
+    margin-bottom: 5rem;
+  }
+  header .fonctionnement__titre {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 3.5rem;
+  }
+  header .fonctionnement__etapes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  header .fonctionnement__etapes__etape {
+    padding-right: 3rem;
+  }
+  header .fonctionnement__etapes__etape-3 {
+    padding-right: 3rem;
+  }
+  #restaurants {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 15% 40% 40%;
+        grid-template-rows: 15% 40% 40%;
+        grid-template-areas: "titre titre" "restaurant1 restaurant2" "restaurant3 restaurant4";
+  }
+  #restaurants h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: titre;
+    text-align: center;
+    font-size: 3.5rem;
+    -webkit-transform: translateX(-2.75%);
+            transform: translateX(-2.75%);
+  }
+  #restaurants .restaurant {
+    height: 50rem;
+  }
+  #restaurants .restaurant i {
+    margin-left: 92%;
+  }
+  #restaurants .restaurant i:hover + .fa-solid {
+    margin-left: 92%;
+  }
+  #restaurants .restaurant1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: restaurant1;
+    margin-bottom: 10rem;
+  }
+  #restaurants .restaurant2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: restaurant2;
+    margin-bottom: 10rem;
+  }
+  #restaurants .restaurant3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: restaurant3;
+  }
+  #restaurants .restaurant4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: restaurant4;
+  }
+  /* LES PAGES "RESTAURANTS" */
+  .photo-laPaletteDuGout {
+    min-height: 35rem;
+  }
+  .photo-laNoteEnchantee {
+    min-height: 35rem;
+  }
+  .photo-aLaFrançaise {
+    min-height: 35rem;
+  }
+  .photo-leDeliceDesSens {
+    min-height: 35rem;
+  }
+  .menu__section__choix:hover > .choix-texte > .choix__soustitre {
+    max-width: 20rem;
+  }
+  .menu__section__choix:hover > .choix-texte > .choix__titre {
+    max-width: 20rem;
+    -webkit-transition: max-width 450ms;
+    transition: max-width 450ms;
+  }
+  .menu__section__choix .prix {
+    margin-left: 75%;
+    font-size: 1.7rem;
+    padding-top: 3rem;
+  }
+  .menu__section__choix .choix-texte {
+    text-overflow: unset;
+  }
+  .menu__section__choix .choix-texte .choix__titre {
+    overflow: visible;
+    text-overflow: unset;
+  }
+  .menu__section__choix .choix-texte .choix__soustitre {
+    overflow: visible;
+    text-overflow: unset;
+  }
+}
+
+@media (max-width: 1440px) {
+  .menu .prix {
+    margin-left: 69%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .menu .prix {
+    margin-left: 69%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .menu .prix {
+    margin-left: 67%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu .prix {
+    margin-left: 65%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .menu .prix {
+    margin-left: 63%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .menu .prix {
+    margin-left: 61%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu .prix {
+    margin-left: 60%;
+  }
+}
+
+@media (max-width: 967px) {
+  .menu .prix {
+    margin-left: 55%;
+  }
+}
+
+@media (max-width: 810px) {
+  .menu .prix {
+    margin-left: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu .prix {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 350px) {
+  .menu .prix {
+    margin-left: -5%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
