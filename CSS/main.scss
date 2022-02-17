@@ -744,6 +744,26 @@ header {
         opacity: 0;
     }
 }
+@keyframes preloaderOhMyFood {
+    from {
+        opacity: 0;
+        transform: translateY(-200%) scale(0.3) perspective(3rem) translateZ(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-200%) scale(1) perspective(3rem) translateZ(0rem);
+    }
+}
+@keyframes preloaderGrid {
+    from{
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 0.5;
+    }
+}
 @keyframes preloader {
     from {
         visibility: visible;
@@ -763,8 +783,8 @@ header {
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 100;
-    animation: preloader 4000ms;
+    z-index: 3;
+    animation: preloader 6500ms;
     &__oh, &__my, &__food, &__ohmyfood {
         font-size: 5rem;
         font-family: 'shrikhand-Regular', sans-serif;
@@ -798,7 +818,72 @@ header {
         animation-delay: 2000ms;
     }
     &__ohmyfood {
-        transform: scale(0);
+        opacity: 0;
+        transform: translateY(-200%) scale(1) perspective(3rem) translateZ(-2rem);
+        animation: preloaderOhMyFood;
+        animation-duration: 2500ms;
+        animation-delay: 4000ms;
+        z-index: 5;
+    }
+}
+
+.preloaderGrid {
+    background-color: #F6F6F6;
+    visibility: hidden;
+    opacity: 0.8;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    z-index: 4;
+    position: fixed;
+    animation: preloaderGrid;
+    animation-duration: 2500ms;
+    animation-delay: 4000ms;
+    grid-template-columns: 48% 48%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "grid1 grid2"
+    "grid3 grid4";
+    .grid1 {
+        background-image: url(../MaquettesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        grid-area: grid1;
+        width: 100%;
+        margin: 2.5%;
+    }
+    .grid2 {
+        background-image: url(../MaquettesOhmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        grid-area: grid2;
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+    .grid3 {
+        background-image: url(../MaquettesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        grid-area: grid3;
+        width: 100%;
+        margin: 2.5%;
+    }
+    .grid4 {
+        background-image: url(../MaquettesOhmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        grid-area: grid4;
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
     }
 }
 
