@@ -936,108 +936,108 @@ header .photo-leDeliceDesSens {
 /* ---------------------- PRELOADER ------------------- */
 @-webkit-keyframes preloaderOh {
   0% {
-    -webkit-transform: translateX(-5000%) translateY(100%) scale(1);
-            transform: translateX(-5000%) translateY(100%) scale(1);
+    -webkit-transform: translateX(-5000%) translateY(100%) scale(2);
+            transform: translateX(-5000%) translateY(100%) scale(2);
     opacity: 1;
   }
   70% {
-    -webkit-transform: translateX(100%) translateY(100%) scale(1.5);
-            transform: translateX(100%) translateY(100%) scale(1.5);
+    -webkit-transform: translateX(100%) translateY(100%) scale(2.5);
+            transform: translateX(100%) translateY(100%) scale(2.5);
     opacity: 1;
   }
   80% {
-    -webkit-transform: translateX(0%) translateY(100%) scale(1);
-            transform: translateX(0%) translateY(100%) scale(1);
+    -webkit-transform: translateX(0%) translateY(100%) scale(2);
+            transform: translateX(0%) translateY(100%) scale(2);
     opacity: 1;
   }
   85% {
-    -webkit-transform: translateY(100%) translateX(0%) scale(1);
-            transform: translateY(100%) translateX(0%) scale(1);
+    -webkit-transform: translateY(100%) translateX(0%) scale(2);
+            transform: translateY(100%) translateX(0%) scale(2);
     opacity: 1;
   }
   90% {
-    -webkit-transform: translateY(100%) translateX(0%) scale(1);
-            transform: translateY(100%) translateX(0%) scale(1);
+    -webkit-transform: translateY(100%) translateX(0%) scale(2);
+            transform: translateY(100%) translateX(0%) scale(2);
     opacity: 1;
   }
   95% {
-    -webkit-transform: translateY(100%) translateX(0%) scale(1);
-            transform: translateY(100%) translateX(0%) scale(1);
+    -webkit-transform: translateY(100%) translateX(0%) scale(2);
+            transform: translateY(100%) translateX(0%) scale(2);
     opacity: 0.5;
   }
   100% {
-    -webkit-transform: translateX(0%) translateY(100%) scale(1);
-            transform: translateX(0%) translateY(100%) scale(1);
+    -webkit-transform: translateX(0%) translateY(100%) scale(2);
+            transform: translateX(0%) translateY(100%) scale(2);
     opacity: 0;
   }
 }
 @keyframes preloaderOh {
   0% {
-    -webkit-transform: translateX(-5000%) translateY(100%) scale(1);
-            transform: translateX(-5000%) translateY(100%) scale(1);
+    -webkit-transform: translateX(-5000%) translateY(100%) scale(2);
+            transform: translateX(-5000%) translateY(100%) scale(2);
     opacity: 1;
   }
   70% {
-    -webkit-transform: translateX(100%) translateY(100%) scale(1.5);
-            transform: translateX(100%) translateY(100%) scale(1.5);
+    -webkit-transform: translateX(100%) translateY(100%) scale(2.5);
+            transform: translateX(100%) translateY(100%) scale(2.5);
     opacity: 1;
   }
   80% {
-    -webkit-transform: translateX(0%) translateY(100%) scale(1);
-            transform: translateX(0%) translateY(100%) scale(1);
+    -webkit-transform: translateX(0%) translateY(100%) scale(2);
+            transform: translateX(0%) translateY(100%) scale(2);
     opacity: 1;
   }
   85% {
-    -webkit-transform: translateY(100%) translateX(0%) scale(1);
-            transform: translateY(100%) translateX(0%) scale(1);
+    -webkit-transform: translateY(100%) translateX(0%) scale(2);
+            transform: translateY(100%) translateX(0%) scale(2);
     opacity: 1;
   }
   90% {
-    -webkit-transform: translateY(100%) translateX(0%) scale(1);
-            transform: translateY(100%) translateX(0%) scale(1);
+    -webkit-transform: translateY(100%) translateX(0%) scale(2);
+            transform: translateY(100%) translateX(0%) scale(2);
     opacity: 1;
   }
   95% {
-    -webkit-transform: translateY(100%) translateX(0%) scale(1);
-            transform: translateY(100%) translateX(0%) scale(1);
+    -webkit-transform: translateY(100%) translateX(0%) scale(2);
+            transform: translateY(100%) translateX(0%) scale(2);
     opacity: 0.5;
   }
   100% {
-    -webkit-transform: translateX(0%) translateY(100%) scale(1);
-            transform: translateX(0%) translateY(100%) scale(1);
+    -webkit-transform: translateX(0%) translateY(100%) scale(2);
+            transform: translateX(0%) translateY(100%) scale(2);
     opacity: 0;
   }
 }
 
 @-webkit-keyframes preloaderMy {
   0% {
-    -webkit-transform: translateX(5000%) translateY(0%) scale(1);
-            transform: translateX(5000%) translateY(0%) scale(1);
+    -webkit-transform: translateX(5000%) translateY(0%) scale(2);
+            transform: translateX(5000%) translateY(0%) scale(2);
     opacity: 1;
   }
   70% {
-    -webkit-transform: translateX(-100%) translateY(0%) scale(1.5);
-            transform: translateX(-100%) translateY(0%) scale(1.5);
+    -webkit-transform: translateX(-100%) translateY(0%) scale(2.5);
+            transform: translateX(-100%) translateY(0%) scale(2.5);
     opacity: 1;
   }
   80% {
-    -webkit-transform: translateX(0%) translateY(0%) scale(1);
-            transform: translateX(0%) translateY(0%) scale(1);
+    -webkit-transform: translateX(0%) translateY(0%) scale(2);
+            transform: translateX(0%) translateY(0%) scale(2);
     opacity: 1;
   }
   85% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(2);
+            transform: scale(2);
     opacity: 1;
   }
   90% {
-    -webkit-transform: translateX(0%) translateY(0%) scale(1);
-            transform: translateX(0%) translateY(0%) scale(1);
+    -webkit-transform: translateX(0%) translateY(0%) scale(2);
+            transform: translateX(0%) translateY(0%) scale(2);
     opacity: 1;
   }
   95% {
-    -webkit-transform: translateX(0%) translateY(0%) scale(1);
-            transform: translateX(0%) translateY(0%) scale(1);
+    -webkit-transform: translateX(0%) translateY(0%) scale(2);
+            transform: translateX(0%) translateY(0%) scale(2);
     opacity: 0.5;
   }
   100% {
@@ -1049,33 +1049,33 @@ header .photo-leDeliceDesSens {
 
 @keyframes preloaderMy {
   0% {
-    -webkit-transform: translateX(5000%) translateY(0%) scale(1);
-            transform: translateX(5000%) translateY(0%) scale(1);
+    -webkit-transform: translateX(5000%) translateY(0%) scale(2);
+            transform: translateX(5000%) translateY(0%) scale(2);
     opacity: 1;
   }
   70% {
-    -webkit-transform: translateX(-100%) translateY(0%) scale(1.5);
-            transform: translateX(-100%) translateY(0%) scale(1.5);
+    -webkit-transform: translateX(-100%) translateY(0%) scale(2.5);
+            transform: translateX(-100%) translateY(0%) scale(2.5);
     opacity: 1;
   }
   80% {
-    -webkit-transform: translateX(0%) translateY(0%) scale(1);
-            transform: translateX(0%) translateY(0%) scale(1);
+    -webkit-transform: translateX(0%) translateY(0%) scale(2);
+            transform: translateX(0%) translateY(0%) scale(2);
     opacity: 1;
   }
   85% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(2);
+            transform: scale(2);
     opacity: 1;
   }
   90% {
-    -webkit-transform: translateX(0%) translateY(0%) scale(1);
-            transform: translateX(0%) translateY(0%) scale(1);
+    -webkit-transform: translateX(0%) translateY(0%) scale(2);
+            transform: translateX(0%) translateY(0%) scale(2);
     opacity: 1;
   }
   95% {
-    -webkit-transform: translateX(0%) translateY(0%) scale(1);
-            transform: translateX(0%) translateY(0%) scale(1);
+    -webkit-transform: translateX(0%) translateY(0%) scale(2);
+            transform: translateX(0%) translateY(0%) scale(2);
     opacity: 0.5;
   }
   100% {
@@ -1085,7 +1085,112 @@ header .photo-leDeliceDesSens {
   }
 }
 
+@-webkit-keyframes preloaderFood {
+  0% {
+    -webkit-transform: translateY(-5000%) scale(2);
+            transform: translateY(-5000%) scale(2);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: translateY(-100%) scale(2);
+            transform: translateY(-100%) scale(2);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(-50%) scale(2);
+            transform: translateY(-50%) scale(2);
+    opacity: 1;
+  }
+  85% {
+    -webkit-transform: translateY(-100%) scale(2);
+            transform: translateY(-100%) scale(2);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(-100%) scale(2);
+            transform: translateY(-100%) scale(2);
+    opacity: 1;
+  }
+  95% {
+    -webkit-transform: translateY(-100%) scale(2);
+            transform: translateY(-100%) scale(2);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes preloaderFood {
+  0% {
+    -webkit-transform: translateY(-5000%) scale(2);
+            transform: translateY(-5000%) scale(2);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: translateY(-100%) scale(2);
+            transform: translateY(-100%) scale(2);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(-50%) scale(2);
+            transform: translateY(-50%) scale(2);
+    opacity: 1;
+  }
+  85% {
+    -webkit-transform: translateY(-100%) scale(2);
+            transform: translateY(-100%) scale(2);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(-100%) scale(2);
+            transform: translateY(-100%) scale(2);
+    opacity: 1;
+  }
+  95% {
+    -webkit-transform: translateY(-100%) scale(2);
+            transform: translateY(-100%) scale(2);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes preloader {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes preloader {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+
 .preloader {
+  visibility: hidden;
   background: #F6F6F6;
   height: 100vh;
   width: 100%;
@@ -1104,12 +1209,16 @@ header .photo-leDeliceDesSens {
           justify-content: center;
   position: fixed;
   z-index: 100;
+  -webkit-animation: preloader 4000ms;
+          animation: preloader 4000ms;
 }
 
 .preloader__oh, .preloader__my, .preloader__food, .preloader__ohmyfood {
   font-size: 5rem;
   font-family: 'shrikhand-Regular', sans-serif;
   text-align: center;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .preloader__oh {
@@ -1118,8 +1227,8 @@ header .photo-leDeliceDesSens {
           transform: translateY(100%);
   -webkit-animation: preloaderOh;
           animation: preloaderOh;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-duration: 1700ms;
+          animation-duration: 1700ms;
   -webkit-animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
           animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
   -webkit-animation-fill-mode: forwards;
@@ -1132,8 +1241,8 @@ header .photo-leDeliceDesSens {
   opacity: 0;
   -webkit-animation: preloaderMy;
           animation: preloaderMy;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-duration: 1700ms;
+          animation-duration: 1700ms;
   -webkit-animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
           animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
   -webkit-animation-fill-mode: forwards;
@@ -1143,8 +1252,19 @@ header .photo-leDeliceDesSens {
 }
 
 .preloader__food {
+  opacity: 0;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  -webkit-animation: preloaderFood;
+          animation: preloaderFood;
+  -webkit-animation-duration: 1700ms;
+          animation-duration: 1700ms;
+  -webkit-animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
+          animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
 }
 
 .preloader__ohmyfood {

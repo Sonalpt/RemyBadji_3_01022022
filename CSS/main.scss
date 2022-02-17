@@ -652,57 +652,57 @@ header {
 
 @keyframes preloaderOh {
     0% {
-        transform: translateX(-5000%) translateY(100%) scale(1);
+        transform: translateX(-5000%) translateY(100%) scale(2);
         opacity: 1;
     }
     70% {
-        transform: translateX(100%) translateY(100%) scale(1.5);
+        transform: translateX(100%) translateY(100%) scale(2.5);
         opacity: 1
     }
     80% {
-        transform: translateX(0%) translateY(100%) scale(1);
+        transform: translateX(0%) translateY(100%) scale(2);
         opacity: 1
     }
     85% {
-        transform: translateY(100%) translateX(0%) scale(1);
+        transform: translateY(100%) translateX(0%) scale(2);
         opacity: 1;
     }
     90% {
-        transform: translateY(100%) translateX(0%) scale(1);
+        transform: translateY(100%) translateX(0%) scale(2);
         opacity: 1;
     }
     95% {
-        transform: translateY(100%) translateX(0%) scale(1);
+        transform: translateY(100%) translateX(0%) scale(2);
         opacity: 0.5;
     }
     100% {
-        transform: translateX(0%) translateY(100%) scale(1);
+        transform: translateX(0%) translateY(100%) scale(2);
         opacity: 0;
     }
 }
 @keyframes preloaderMy {
     0% {
-        transform: translateX(5000%) translateY(0%) scale(1);
+        transform: translateX(5000%) translateY(0%) scale(2);
         opacity: 1;
     }
     70% {
-        transform: translateX(-100%) translateY(0%) scale(1.5);
+        transform: translateX(-100%) translateY(0%) scale(2.5);
         opacity: 1
     }
     80% {
-        transform: translateX(0%) translateY(0%) scale(1);
+        transform: translateX(0%) translateY(0%) scale(2);
         opacity: 1
     }
     85% {
-        transform: scale(1);
+        transform: scale(2);
         opacity: 1
     }
     90% {
-        transform: translateX(0%) translateY(0%) scale(1);
+        transform: translateX(0%) translateY(0%) scale(2);
         opacity: 1
     }
     95% {
-        transform: translateX(0%) translateY(0%) scale(1);
+        transform: translateX(0%) translateY(0%) scale(2);
         opacity: 0.5;
     }
     100% {
@@ -710,8 +710,51 @@ header {
         opacity: 0;
     }
 }
+@keyframes preloaderFood {
+    0% {
+        transform: translateY(-5000%) scale(2);
+        opacity: 1;
+    }
+    70% {
+        transform: scale(2.5);
+        opacity: 1
+    }
+    75% {
+        transform: translateY(-100%) scale(2);
+        opacity: 1
+    }
+    80% {
+        transform: translateY(-50%) scale(2);
+        opacity: 1
+    }
+    85% {
+        transform: translateY(-100%) scale(2);
+        opacity: 1
+    }
+    90% {
+        transform: translateY(-100%) scale(2);
+        opacity: 1
+    }
+    95% {
+        transform: translateY(-100%) scale(2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+@keyframes preloader {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: hidden;
+    }
+}
 
 .preloader {
+    visibility: hidden;
     background: #F6F6F6;
     height: 100vh;
     width: 100%;
@@ -721,16 +764,18 @@ header {
     justify-content: center;
     position: fixed;
     z-index: 100;
+    animation: preloader 4000ms;
     &__oh, &__my, &__food, &__ohmyfood {
         font-size: 5rem;
         font-family: 'shrikhand-Regular', sans-serif;
         text-align: center;
+        transform: scale(2);
     }
     &__oh {
         opacity: 0;
         transform: translateY(100%);
         animation: preloaderOh;
-        animation-duration: 1000ms;
+        animation-duration: 1700ms;
         animation-timing-function: cubic-bezier(.69,.8,.69,.8);
         animation-fill-mode: forwards;
     }
@@ -738,13 +783,19 @@ header {
         transform: translateY(0%);
         opacity: 0;
         animation: preloaderMy;
-        animation-duration: 1000ms;
+        animation-duration: 1700ms;
         animation-timing-function: cubic-bezier(.69,.8,.69,.8);
         animation-fill-mode: forwards;
         animation-delay: 1000ms;
     }
     &__food {
+        opacity: 0;
         transform: translateY(-100%);
+        animation: preloaderFood;
+        animation-duration: 1700ms;
+        animation-timing-function: cubic-bezier(.69,.8,.69,.8);
+        animation-fill-mode: forwards;
+        animation-delay: 2000ms;
     }
     &__ohmyfood {
         transform: scale(0);
