@@ -277,6 +277,21 @@ header {
             background-position: center;
             background-size: cover;
             border-radius: 1.5rem 1.5rem 0rem 0rem;
+            .nouveau {
+                background-color: #99E2D0;
+                color: #269E81;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                border-radius: 0.3rem;
+                margin-left: 75%;
+                position: relative;
+                top: 7.5%;
+                font-family: 'Roboto-Bold', sans-serif;
+                font-size: 1.4rem;
+                text-align: center;
+            }
         }
         .photo2 {
             background-image: url(../MaquettesOhmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
@@ -633,6 +648,109 @@ header {
         }
 }
 
+/* ---------------------- PRELOADER ------------------- */
+
+@keyframes preloaderOh {
+    0% {
+        transform: translateX(-5000%) translateY(100%) scale(1);
+        opacity: 1;
+    }
+    70% {
+        transform: translateX(100%) translateY(100%) scale(1.5);
+        opacity: 1
+    }
+    80% {
+        transform: translateX(0%) translateY(100%) scale(1);
+        opacity: 1
+    }
+    85% {
+        transform: translateY(100%) translateX(0%) scale(1);
+        opacity: 1;
+    }
+    90% {
+        transform: translateY(100%) translateX(0%) scale(1);
+        opacity: 1;
+    }
+    95% {
+        transform: translateY(100%) translateX(0%) scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0%) translateY(100%) scale(1);
+        opacity: 0;
+    }
+}
+@keyframes preloaderMy {
+    0% {
+        transform: translateX(5000%) translateY(0%) scale(1);
+        opacity: 1;
+    }
+    70% {
+        transform: translateX(-100%) translateY(0%) scale(1.5);
+        opacity: 1
+    }
+    80% {
+        transform: translateX(0%) translateY(0%) scale(1);
+        opacity: 1
+    }
+    85% {
+        transform: scale(1);
+        opacity: 1
+    }
+    90% {
+        transform: translateX(0%) translateY(0%) scale(1);
+        opacity: 1
+    }
+    95% {
+        transform: translateX(0%) translateY(0%) scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0%) translateY(0%);
+        opacity: 0;
+    }
+}
+
+.preloader {
+    background: #F6F6F6;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    &__oh, &__my, &__food, &__ohmyfood {
+        font-size: 5rem;
+        font-family: 'shrikhand-Regular', sans-serif;
+        text-align: center;
+    }
+    &__oh {
+        opacity: 0;
+        transform: translateY(100%);
+        animation: preloaderOh;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(.69,.8,.69,.8);
+        animation-fill-mode: forwards;
+    }
+    &__my {
+        transform: translateY(0%);
+        opacity: 0;
+        animation: preloaderMy;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(.69,.8,.69,.8);
+        animation-fill-mode: forwards;
+        animation-delay: 1000ms;
+    }
+    &__food {
+        transform: translateY(-100%);
+    }
+    &__ohmyfood {
+        transform: scale(0);
+    }
+}
+
 /* --------------------- RESPONSIVE DESIGN DESKTOP ---------------- */
 
 @media (min-width: 768px) {
@@ -770,6 +888,13 @@ header {
     
 }
 
+@media (max-width: 1600px) {
+    .menu {
+        .prix {
+            margin-left: 74%;
+        }
+    }
+}
 @media (max-width: 1440px) {
     .menu {
        .prix {
@@ -837,16 +962,65 @@ header {
 @media (max-width: 768px) {
     .menu {
         .prix {
+            margin-left: 45%;
+        }
+    }
+}
+@media (min-width: 768px) {
+    #restaurants .restaurant {
+        i {
+            margin-left: 85%;
+            &:hover {
+                & + .fa-solid {
+                    margin-left: 85%;
+                }
+            }
+        }
+    }
+    #restaurants .restaurant .nouveau {
+        margin-left: 69%;
+        top: 5%;
+    }
+}
+@media (max-width: 420px) {
+    .menu {
+        .prix {
             margin-left: 10%;
         }
-     }
+    }
+    #restaurants .restaurant .nouveau {
+        margin-left: 74%;
+        top: 7%;
+    }
 }
 @media (max-width: 350px) {
     .menu {
         .prix {
             margin-left: -5%;
         }
-     }
+     
+    }
+    #restaurants .restaurant .nouveau {
+        margin-left: 70%;
+    }
+}
+@media (min-width: 1368px) {
+    #restaurants .restaurant .nouveau {
+        margin-left: 82.5%;
+        font-size: 1.7rem;
+    }
+}
+@media (min-width: 810px) {
+    #restaurants .restaurant {
+        i {
+            margin-left: 87%;
+            &:hover {
+                & + .fa-solid {
+                    margin-left: 87%;
+                }
+            }
+        }
+    }
 }
 
 

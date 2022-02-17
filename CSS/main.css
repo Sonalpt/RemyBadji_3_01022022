@@ -424,6 +424,22 @@ header .fonctionnement__etapes__etape-3 .texte {
   border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
+#restaurants .restaurant__photo .nouveau {
+  background-color: #99E2D0;
+  color: #269E81;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.3rem;
+  margin-left: 75%;
+  position: relative;
+  top: 7.5%;
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
 #restaurants .restaurant .photo2 {
   background-image: url(../MaquettesOhmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
 }
@@ -917,6 +933,225 @@ header .photo-leDeliceDesSens {
   transition: background-color 700ms;
 }
 
+/* ---------------------- PRELOADER ------------------- */
+@-webkit-keyframes preloaderOh {
+  0% {
+    -webkit-transform: translateX(-5000%) translateY(100%) scale(1);
+            transform: translateX(-5000%) translateY(100%) scale(1);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: translateX(100%) translateY(100%) scale(1.5);
+            transform: translateX(100%) translateY(100%) scale(1.5);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateX(0%) translateY(100%) scale(1);
+            transform: translateX(0%) translateY(100%) scale(1);
+    opacity: 1;
+  }
+  85% {
+    -webkit-transform: translateY(100%) translateX(0%) scale(1);
+            transform: translateY(100%) translateX(0%) scale(1);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(100%) translateX(0%) scale(1);
+            transform: translateY(100%) translateX(0%) scale(1);
+    opacity: 1;
+  }
+  95% {
+    -webkit-transform: translateY(100%) translateX(0%) scale(1);
+            transform: translateY(100%) translateX(0%) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0%) translateY(100%) scale(1);
+            transform: translateX(0%) translateY(100%) scale(1);
+    opacity: 0;
+  }
+}
+@keyframes preloaderOh {
+  0% {
+    -webkit-transform: translateX(-5000%) translateY(100%) scale(1);
+            transform: translateX(-5000%) translateY(100%) scale(1);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: translateX(100%) translateY(100%) scale(1.5);
+            transform: translateX(100%) translateY(100%) scale(1.5);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateX(0%) translateY(100%) scale(1);
+            transform: translateX(0%) translateY(100%) scale(1);
+    opacity: 1;
+  }
+  85% {
+    -webkit-transform: translateY(100%) translateX(0%) scale(1);
+            transform: translateY(100%) translateX(0%) scale(1);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(100%) translateX(0%) scale(1);
+            transform: translateY(100%) translateX(0%) scale(1);
+    opacity: 1;
+  }
+  95% {
+    -webkit-transform: translateY(100%) translateX(0%) scale(1);
+            transform: translateY(100%) translateX(0%) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0%) translateY(100%) scale(1);
+            transform: translateX(0%) translateY(100%) scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes preloaderMy {
+  0% {
+    -webkit-transform: translateX(5000%) translateY(0%) scale(1);
+            transform: translateX(5000%) translateY(0%) scale(1);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: translateX(-100%) translateY(0%) scale(1.5);
+            transform: translateX(-100%) translateY(0%) scale(1.5);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateX(0%) translateY(0%) scale(1);
+            transform: translateX(0%) translateY(0%) scale(1);
+    opacity: 1;
+  }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateX(0%) translateY(0%) scale(1);
+            transform: translateX(0%) translateY(0%) scale(1);
+    opacity: 1;
+  }
+  95% {
+    -webkit-transform: translateX(0%) translateY(0%) scale(1);
+            transform: translateX(0%) translateY(0%) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0%) translateY(0%);
+            transform: translateX(0%) translateY(0%);
+    opacity: 0;
+  }
+}
+
+@keyframes preloaderMy {
+  0% {
+    -webkit-transform: translateX(5000%) translateY(0%) scale(1);
+            transform: translateX(5000%) translateY(0%) scale(1);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: translateX(-100%) translateY(0%) scale(1.5);
+            transform: translateX(-100%) translateY(0%) scale(1.5);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateX(0%) translateY(0%) scale(1);
+            transform: translateX(0%) translateY(0%) scale(1);
+    opacity: 1;
+  }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateX(0%) translateY(0%) scale(1);
+            transform: translateX(0%) translateY(0%) scale(1);
+    opacity: 1;
+  }
+  95% {
+    -webkit-transform: translateX(0%) translateY(0%) scale(1);
+            transform: translateX(0%) translateY(0%) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0%) translateY(0%);
+            transform: translateX(0%) translateY(0%);
+    opacity: 0;
+  }
+}
+
+.preloader {
+  background: #F6F6F6;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.preloader__oh, .preloader__my, .preloader__food, .preloader__ohmyfood {
+  font-size: 5rem;
+  font-family: 'shrikhand-Regular', sans-serif;
+  text-align: center;
+}
+
+.preloader__oh {
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation: preloaderOh;
+          animation: preloaderOh;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
+          animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.preloader__my {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 0;
+  -webkit-animation: preloaderMy;
+          animation: preloaderMy;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
+          animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.preloader__food {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.preloader__ohmyfood {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
 /* --------------------- RESPONSIVE DESIGN DESKTOP ---------------- */
 @media (min-width: 768px) {
   /* BASES DU RESPONSIVE */
@@ -1053,6 +1288,12 @@ header .photo-leDeliceDesSens {
   }
 }
 
+@media (max-width: 1600px) {
+  .menu .prix {
+    margin-left: 74%;
+  }
+}
+
 @media (max-width: 1440px) {
   .menu .prix {
     margin-left: 69%;
@@ -1109,13 +1350,55 @@ header .photo-leDeliceDesSens {
 
 @media (max-width: 768px) {
   .menu .prix {
+    margin-left: 45%;
+  }
+}
+
+@media (min-width: 768px) {
+  #restaurants .restaurant i {
+    margin-left: 85%;
+  }
+  #restaurants .restaurant i:hover + .fa-solid {
+    margin-left: 85%;
+  }
+  #restaurants .restaurant .nouveau {
+    margin-left: 69%;
+    top: 5%;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu .prix {
     margin-left: 10%;
+  }
+  #restaurants .restaurant .nouveau {
+    margin-left: 74%;
+    top: 7%;
   }
 }
 
 @media (max-width: 350px) {
   .menu .prix {
     margin-left: -5%;
+  }
+  #restaurants .restaurant .nouveau {
+    margin-left: 70%;
+  }
+}
+
+@media (min-width: 1368px) {
+  #restaurants .restaurant .nouveau {
+    margin-left: 82.5%;
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 810px) {
+  #restaurants .restaurant i {
+    margin-left: 87%;
+  }
+  #restaurants .restaurant i:hover + .fa-solid {
+    margin-left: 87%;
   }
 }
 /*# sourceMappingURL=main.css.map */
