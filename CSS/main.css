@@ -1341,10 +1341,10 @@ header .photo-leDeliceDesSens {
   position: fixed;
   -webkit-animation: preloaderGrid;
           animation: preloaderGrid;
-  -webkit-animation-duration: 2500ms;
-          animation-duration: 2500ms;
-  -webkit-animation-delay: 4000ms;
-          animation-delay: 4000ms;
+  -webkit-animation-duration: 3000ms;
+          animation-duration: 3000ms;
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms;
   -ms-grid-columns: 48% 48%;
       grid-template-columns: 48% 48%;
   -ms-grid-rows: 50% 50%;
