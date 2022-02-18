@@ -1439,6 +1439,7 @@ header .photo-leDeliceDesSens {
   }
   header .fonctionnement__etapes__etape {
     padding-right: 3rem;
+    margin-right: 1rem;
   }
   header .fonctionnement__etapes__etape-3 {
     padding-right: 3rem;
@@ -1608,6 +1609,35 @@ header .photo-leDeliceDesSens {
   #restaurants .restaurant .nouveau {
     margin-left: 69%;
     top: 5%;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: relative;
+    right: 2%;
+  }
+  footer ul li {
+    font-size: 1.2rem;
+    margin-right: 2rem;
   }
 }
 

@@ -917,6 +917,7 @@ header {
                 width: 100%;
                 &__etape {
                     padding-right: 3rem;
+                    margin-right: 1rem;
                 }
                 &__etape-3 {
                     padding-right: 3rem;
@@ -1110,6 +1111,22 @@ header {
     #restaurants .restaurant .nouveau {
         margin-left: 69%;
         top: 5%;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            right: 2%;
+            li {
+                font-size: 1.2rem;
+                margin-right: 2rem;
+            }
+        }
     }
 }
 @media (max-width: 420px) {
