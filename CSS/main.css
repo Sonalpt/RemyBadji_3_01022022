@@ -473,7 +473,6 @@ header .fonctionnement__etapes__etape-3 .texte {
 
 #restaurants .restaurant .fa-solid {
   color: #9356dc;
-  color: linear-gradient(353deg, #9356dc 0%, #ff79da 100%);
   z-index: 2;
   position: relative;
   bottom: 9.25rem;
@@ -522,7 +521,6 @@ footer .marque:hover {
 }
 
 footer ul {
-  font-style: none;
   list-style-type: none;
   margin-left: -1.5rem;
 }
@@ -683,7 +681,6 @@ header .photo-leDeliceDesSens {
 
 .menu__nom .fa-solid {
   color: #9356dc;
-  color: linear-gradient(353deg, #9356dc 0%, #ff79da 100%);
   position: absolute;
   z-index: 2;
   left: 80%;
@@ -747,9 +744,6 @@ header .photo-leDeliceDesSens {
   height: 0.3rem;
   margin-top: -0.5rem;
   margin-bottom: 2rem;
-  -ms-flex-item-align: justify;
-      -ms-grid-row-align: justify;
-      align-self: justify;
 }
 
 .menu__section__choix {
@@ -842,7 +836,6 @@ header .photo-leDeliceDesSens {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-lines: 1;
   -webkit-transition: max-width 450ms;
   transition: max-width 450ms;
 }
@@ -854,7 +847,6 @@ header .photo-leDeliceDesSens {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-lines: 1;
   -webkit-transition: max-width 450ms;
   transition: max-width 450ms;
 }
