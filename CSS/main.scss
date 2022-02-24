@@ -150,11 +150,11 @@ header {
             border-radius: 50px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             font-family: 'Roboto-Regular', sans-serif;
-            transition: background-color 600ms box-shadow 700ms;
+            transition: background-color 600ms;
             &:hover {
                 background: lighten($color: rgb(147,86,220), $amount: 15%);
                 box-shadow: rgba(50, 50, 93, 0.60) 0px 13px 27px -5px, rgba(0, 0, 0, 0.60) 0px 8px 16px -8px;
-                transition: background-color 700ms, box-shadow 700ms;
+                transition: background-color 700ms;
             }
         }
     }
@@ -634,11 +634,11 @@ header {
             background: linear-gradient(353deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
             box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             margin-bottom: 3rem;
-            transition: background-color 700ms, box-shadow 700ms;
+            transition: background-color 700ms;
             &:hover {
                 background: lighten($color: rgb(147,86,220), $amount: 15%);
                 box-shadow: rgba(50, 50, 93, 0.60) 0px 13px 27px -5px, rgba(0, 0, 0, 0.60) 0px 8px 16px -8px;
-                transition: background-color 700ms, box-shadow 700ms;
+                transition: background-color 700ms;
                 cursor: pointer;
             }
         }

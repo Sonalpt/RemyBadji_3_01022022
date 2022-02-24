@@ -247,18 +247,16 @@ header .presentation a {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   font-family: 'Roboto-Regular', sans-serif;
-  -webkit-transition: background-color 600ms box-shadow 700ms;
-  transition: background-color 600ms box-shadow 700ms;
+  -webkit-transition: background-color 600ms;
+  transition: background-color 600ms;
 }
 
 header .presentation a:hover {
   background: #bc95e9;
   -webkit-box-shadow: rgba(50, 50, 93, 0.6) 0px 13px 27px -5px, rgba(0, 0, 0, 0.6) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.6) 0px 13px 27px -5px, rgba(0, 0, 0, 0.6) 0px 8px 16px -8px;
-  -webkit-transition: background-color 700ms, -webkit-box-shadow 700ms;
-  transition: background-color 700ms, -webkit-box-shadow 700ms;
-  transition: background-color 700ms, box-shadow 700ms;
-  transition: background-color 700ms, box-shadow 700ms, -webkit-box-shadow 700ms;
+  -webkit-transition: background-color 700ms;
+  transition: background-color 700ms;
 }
 
 header .fonctionnement {
@@ -920,20 +918,16 @@ header .photo-leDeliceDesSens {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin-bottom: 3rem;
-  -webkit-transition: background-color 700ms, -webkit-box-shadow 700ms;
-  transition: background-color 700ms, -webkit-box-shadow 700ms;
-  transition: background-color 700ms, box-shadow 700ms;
-  transition: background-color 700ms, box-shadow 700ms, -webkit-box-shadow 700ms;
+  -webkit-transition: background-color 700ms;
+  transition: background-color 700ms;
 }
 
 .menu .commander:hover {
   background: #bc95e9;
   -webkit-box-shadow: rgba(50, 50, 93, 0.6) 0px 13px 27px -5px, rgba(0, 0, 0, 0.6) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.6) 0px 13px 27px -5px, rgba(0, 0, 0, 0.6) 0px 8px 16px -8px;
-  -webkit-transition: background-color 700ms, -webkit-box-shadow 700ms;
-  transition: background-color 700ms, -webkit-box-shadow 700ms;
-  transition: background-color 700ms, box-shadow 700ms;
-  transition: background-color 700ms, box-shadow 700ms, -webkit-box-shadow 700ms;
+  -webkit-transition: background-color 700ms;
+  transition: background-color 700ms;
   cursor: pointer;
 }
 
