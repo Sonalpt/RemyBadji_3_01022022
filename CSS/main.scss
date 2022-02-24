@@ -150,10 +150,11 @@ header {
             border-radius: 50px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             font-family: 'Roboto-Regular', sans-serif;
-            transition: background-color 600ms;
+            transition: background-color 600ms box-shadow 700ms;
             &:hover {
                 background: lighten($color: rgb(147,86,220), $amount: 15%);
-                transition: background-color 700ms;
+                box-shadow: rgba(50, 50, 93, 0.60) 0px 13px 27px -5px, rgba(0, 0, 0, 0.60) 0px 8px 16px -8px;
+                transition: background-color 700ms, box-shadow 700ms;
             }
         }
     }
@@ -633,9 +634,12 @@ header {
             background: linear-gradient(353deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
             box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
             margin-bottom: 3rem;
+            transition: background-color 700ms, box-shadow 700ms;
             &:hover {
                 background: lighten($color: rgb(147,86,220), $amount: 15%);
-                transition: background-color 700ms;
+                box-shadow: rgba(50, 50, 93, 0.60) 0px 13px 27px -5px, rgba(0, 0, 0, 0.60) 0px 8px 16px -8px;
+                transition: background-color 700ms, box-shadow 700ms;
+                cursor: pointer;
             }
         }
 }
@@ -736,26 +740,6 @@ header {
         opacity: 0;
     }
 }
-@keyframes preloaderOhMyFood {
-    from {
-        opacity: 0;
-        transform: translateY(-200%) scale(0.3) perspective(3rem) translateZ(-1rem);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(-200%) scale(1) perspective(3rem) translateZ(0rem);
-    }
-}
-@keyframes preloaderGrid {
-    from{
-        visibility: visible;
-        opacity: 0;
-    }
-    to {
-        visibility: visible;
-        opacity: 0.5;
-    }
-}
 @keyframes preloader {
     from {
         visibility: visible;
@@ -776,7 +760,7 @@ header {
     justify-content: center;
     position: fixed;
     z-index: 3;
-    animation: preloader 6500ms;
+    animation: preloader 3000ms;
     &__oh, &__my, &__food, &__ohmyfood {
         font-size: 5rem;
         font-family: 'shrikhand-Regular', sans-serif;
@@ -787,7 +771,7 @@ header {
         opacity: 0;
         transform: translateY(100%);
         animation: preloaderOh;
-        animation-duration: 1700ms;
+        animation-duration: 1900ms;
         animation-timing-function: cubic-bezier(.69,.8,.69,.8);
         animation-fill-mode: forwards;
     }
@@ -795,89 +779,23 @@ header {
         transform: translateY(0%);
         opacity: 0;
         animation: preloaderMy;
-        animation-duration: 1700ms;
+        animation-duration: 1900ms;
         animation-timing-function: cubic-bezier(.69,.8,.69,.8);
         animation-fill-mode: forwards;
-        animation-delay: 1000ms;
+        animation-delay: 450ms;
     }
     &__food {
         opacity: 0;
         transform: translateY(-100%);
         animation: preloaderFood;
-        animation-duration: 1700ms;
+        animation-duration: 1900ms;
         animation-timing-function: cubic-bezier(.69,.8,.69,.8);
         animation-fill-mode: forwards;
-        animation-delay: 2000ms;
-    }
-    &__ohmyfood {
-        opacity: 0;
-        transform: translateY(-200%) scale(1) perspective(3rem) translateZ(-2rem);
-        animation: preloaderOhMyFood;
-        animation-duration: 2500ms;
-        animation-delay: 4000ms;
-        z-index: 5;
+        animation-delay: 900ms;
     }
 }
 
-.preloaderGrid {
-    background-color: #F6F6F6;
-    visibility: hidden;
-    opacity: 0.8;
-    margin: 0;
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    z-index: 4;
-    position: fixed;
-    animation: preloaderGrid;
-    animation-duration: 3000ms;
-    animation-delay: 3500ms;
-    grid-template-columns: 48% 48%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: 
-    "grid1 grid2"
-    "grid3 grid4";
-    .grid1 {
-        background-image: url(../MaquettesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        grid-area: grid1;
-        width: 100%;
-        margin: 2.5%;
-    }
-    .grid2 {
-        background-image: url(../MaquettesOhmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        grid-area: grid2;
-        width: 100%;
-        margin-left: 5%;
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
-    }
-    .grid3 {
-        background-image: url(../MaquettesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        grid-area: grid3;
-        width: 100%;
-        margin: 2.5%;
-    }
-    .grid4 {
-        background-image: url(../MaquettesOhmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        grid-area: grid4;
-        width: 100%;
-        margin-left: 5%;
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
-    }
-}
+ 
 
 /* --------------------- RESPONSIVE DESIGN DESKTOP ---------------- */
 

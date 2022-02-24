@@ -247,14 +247,18 @@ header .presentation a {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   font-family: 'Roboto-Regular', sans-serif;
-  -webkit-transition: background-color 600ms;
-  transition: background-color 600ms;
+  -webkit-transition: background-color 600ms box-shadow 700ms;
+  transition: background-color 600ms box-shadow 700ms;
 }
 
 header .presentation a:hover {
   background: #bc95e9;
-  -webkit-transition: background-color 700ms;
-  transition: background-color 700ms;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.6) 0px 13px 27px -5px, rgba(0, 0, 0, 0.6) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.6) 0px 13px 27px -5px, rgba(0, 0, 0, 0.6) 0px 8px 16px -8px;
+  -webkit-transition: background-color 700ms, -webkit-box-shadow 700ms;
+  transition: background-color 700ms, -webkit-box-shadow 700ms;
+  transition: background-color 700ms, box-shadow 700ms;
+  transition: background-color 700ms, box-shadow 700ms, -webkit-box-shadow 700ms;
 }
 
 header .fonctionnement {
@@ -916,12 +920,21 @@ header .photo-leDeliceDesSens {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin-bottom: 3rem;
+  -webkit-transition: background-color 700ms, -webkit-box-shadow 700ms;
+  transition: background-color 700ms, -webkit-box-shadow 700ms;
+  transition: background-color 700ms, box-shadow 700ms;
+  transition: background-color 700ms, box-shadow 700ms, -webkit-box-shadow 700ms;
 }
 
 .menu .commander:hover {
   background: #bc95e9;
-  -webkit-transition: background-color 700ms;
-  transition: background-color 700ms;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.6) 0px 13px 27px -5px, rgba(0, 0, 0, 0.6) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.6) 0px 13px 27px -5px, rgba(0, 0, 0, 0.6) 0px 8px 16px -8px;
+  -webkit-transition: background-color 700ms, -webkit-box-shadow 700ms;
+  transition: background-color 700ms, -webkit-box-shadow 700ms;
+  transition: background-color 700ms, box-shadow 700ms;
+  transition: background-color 700ms, box-shadow 700ms, -webkit-box-shadow 700ms;
+  cursor: pointer;
 }
 
 /* ---------------------- PRELOADER ------------------- */
@@ -1162,54 +1175,6 @@ header .photo-leDeliceDesSens {
   }
 }
 
-@-webkit-keyframes preloaderOhMyFood {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-200%) scale(0.3) perspective(3rem) translateZ(-1rem);
-            transform: translateY(-200%) scale(0.3) perspective(3rem) translateZ(-1rem);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(-200%) scale(1) perspective(3rem) translateZ(0rem);
-            transform: translateY(-200%) scale(1) perspective(3rem) translateZ(0rem);
-  }
-}
-
-@keyframes preloaderOhMyFood {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-200%) scale(0.3) perspective(3rem) translateZ(-1rem);
-            transform: translateY(-200%) scale(0.3) perspective(3rem) translateZ(-1rem);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(-200%) scale(1) perspective(3rem) translateZ(0rem);
-            transform: translateY(-200%) scale(1) perspective(3rem) translateZ(0rem);
-  }
-}
-
-@-webkit-keyframes preloaderGrid {
-  from {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: visible;
-    opacity: 0.5;
-  }
-}
-
-@keyframes preloaderGrid {
-  from {
-    visibility: visible;
-    opacity: 0;
-  }
-  to {
-    visibility: visible;
-    opacity: 0.5;
-  }
-}
-
 @-webkit-keyframes preloader {
   from {
     visibility: visible;
@@ -1248,8 +1213,8 @@ header .photo-leDeliceDesSens {
           justify-content: center;
   position: fixed;
   z-index: 3;
-  -webkit-animation: preloader 6500ms;
-          animation: preloader 6500ms;
+  -webkit-animation: preloader 3000ms;
+          animation: preloader 3000ms;
 }
 
 .preloader__oh, .preloader__my, .preloader__food, .preloader__ohmyfood {
@@ -1266,8 +1231,8 @@ header .photo-leDeliceDesSens {
           transform: translateY(100%);
   -webkit-animation: preloaderOh;
           animation: preloaderOh;
-  -webkit-animation-duration: 1700ms;
-          animation-duration: 1700ms;
+  -webkit-animation-duration: 1900ms;
+          animation-duration: 1900ms;
   -webkit-animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
           animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
   -webkit-animation-fill-mode: forwards;
@@ -1280,14 +1245,14 @@ header .photo-leDeliceDesSens {
   opacity: 0;
   -webkit-animation: preloaderMy;
           animation: preloaderMy;
-  -webkit-animation-duration: 1700ms;
-          animation-duration: 1700ms;
+  -webkit-animation-duration: 1900ms;
+          animation-duration: 1900ms;
   -webkit-animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
           animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
 }
 
 .preloader__food {
@@ -1296,103 +1261,14 @@ header .photo-leDeliceDesSens {
           transform: translateY(-100%);
   -webkit-animation: preloaderFood;
           animation: preloaderFood;
-  -webkit-animation-duration: 1700ms;
-          animation-duration: 1700ms;
+  -webkit-animation-duration: 1900ms;
+          animation-duration: 1900ms;
   -webkit-animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
           animation-timing-function: cubic-bezier(0.69, 0.8, 0.69, 0.8);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
-}
-
-.preloader__ohmyfood {
-  opacity: 0;
-  -webkit-transform: translateY(-200%) scale(1) perspective(3rem) translateZ(-2rem);
-          transform: translateY(-200%) scale(1) perspective(3rem) translateZ(-2rem);
-  -webkit-animation: preloaderOhMyFood;
-          animation: preloaderOhMyFood;
-  -webkit-animation-duration: 2500ms;
-          animation-duration: 2500ms;
-  -webkit-animation-delay: 4000ms;
-          animation-delay: 4000ms;
-  z-index: 5;
-}
-
-.preloaderGrid {
-  background-color: #F6F6F6;
-  visibility: hidden;
-  opacity: 0.8;
-  margin: 0;
-  height: 100vh;
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  z-index: 4;
-  position: fixed;
-  -webkit-animation: preloaderGrid;
-          animation: preloaderGrid;
-  -webkit-animation-duration: 3000ms;
-          animation-duration: 3000ms;
-  -webkit-animation-delay: 3500ms;
-          animation-delay: 3500ms;
-  -ms-grid-columns: 48% 48%;
-      grid-template-columns: 48% 48%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-      grid-template-areas: "grid1 grid2" "grid3 grid4";
-}
-
-.preloaderGrid .grid1 {
-  background-image: url(../MaquettesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: grid1;
-  width: 100%;
-  margin: 2.5%;
-}
-
-.preloaderGrid .grid2 {
-  background-image: url(../MaquettesOhmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: grid2;
-  width: 100%;
-  margin-left: 5%;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-}
-
-.preloaderGrid .grid3 {
-  background-image: url(../MaquettesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: grid3;
-  width: 100%;
-  margin: 2.5%;
-}
-
-.preloaderGrid .grid4 {
-  background-image: url(../MaquettesOhmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: grid4;
-  width: 100%;
-  margin-left: 5%;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
 /* --------------------- RESPONSIVE DESIGN DESKTOP ---------------- */
